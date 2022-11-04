@@ -46,12 +46,11 @@ function generateNumber() {
 
 let target = generateNumber(); // random number between 1 and 30 inclusive
 let tries = 5;
-tryCount.innerText = `You have ${tries} tries left`;
+tryCount.innerText = `You have ${tries} tries`;
 
 // adding an event listener to the getResult element
 onEvent('click', getResult, function() {
     let a = numberOne.value.trim();
-    console.log(`Secret number is ${target}`);
 
     if(isNumber(a)){
         let userVal = parseFloat(a);
